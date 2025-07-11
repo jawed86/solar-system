@@ -20,7 +20,7 @@ function addStars(count = 1000) {
 
   geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
 
-  const starTexture = new THREE.TextureLoader().load('./src/texture/star.jpg');
+  const starTexture = new THREE.TextureLoader().load('./public/texture/star.jpg');
   const material = new THREE.PointsMaterial({
     map: starTexture,
     size: 2,
@@ -40,15 +40,15 @@ addStars();
 
 // Texture
 const loader = new THREE.TextureLoader();
-const sunTexture = loader.load('./src/texture/sun.jpg');
-const mercuryTexture = loader.load('./src/texture/mercury.jpg');
-const venusTexture = loader.load('./src/texture/venus.jpg');
-const earthTexture = loader.load('./src/texture/earth.jpg');
-const marsTexture = loader.load('./src/texture/mars.jpg');
-const jupiterTexture = loader.load('./src/texture/jupiter.jpg');
-const saturnTexture = loader.load('./src/texture/saturn.jpg');
-const uranusTexture = loader.load('./src/texture/uranus.jpg');
-const neptuneTexture = loader.load('./src/texture/neptune.jpg');
+const sunTexture = loader.load('/texture/sun.jpg');
+const mercuryTexture = loader.load('/texture/mercury.jpg');
+const venusTexture = loader.load('/texture/venus.jpg');
+const earthTexture = loader.load('/texture/earth.jpg');
+const marsTexture = loader.load('/texture/mars.jpg');
+const jupiterTexture = loader.load('/texture/jupiter.jpg');
+const saturnTexture = loader.load('/texture/saturn.jpg');
+const uranusTexture = loader.load('/texture/uranus.jpg');
+const neptuneTexture = loader.load('/texture/neptune.jpg');
 
 
 //sun
@@ -207,7 +207,7 @@ scene.add(ambientLight);
 // const helper = new THREE.PointLightHelper(sunLight, 3);
 // scene.add(helper);
 
-const glowTexture = loader.load('./src/texture/glow.png');
+const glowTexture = loader.load('/texture/glow.png');
 
 const spriteMaterial = new THREE.SpriteMaterial({
   map: glowTexture,

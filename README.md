@@ -35,8 +35,7 @@ This project is a 3D interactive simulation of the Solar System built using **Th
 solar-system/
 ├── node_modules/
 ├── public/
-├── src/
-│   ├── texture/
+|   ├── texture/
 │   │   ├── earth.jpg
 │   │   ├── glow.png
 │   │   ├── jupiter.jpg
@@ -48,6 +47,7 @@ solar-system/
 │   │   ├── sun.jpg
 │   │   ├── uranus.jpg
 │   │   └── venus.jpg
+├── src/
 │   ├── main.js
 │   └── style.css
 ├── index.html
