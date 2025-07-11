@@ -20,7 +20,7 @@ function addStars(count = 1000) {
 
   geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
 
-  const starTexture = new THREE.TextureLoader().load('./public/texture/star.jpg');
+  const starTexture = new THREE.TextureLoader().load('/texture/star.jpg');
   const material = new THREE.PointsMaterial({
     map: starTexture,
     size: 2,
