@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#controls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    z-index: 10;
+}
+
+#sliders {
+    margin-top: 10px;
+}
+
+#sliders label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#sliders input[type="range"] {
+    display: block;
+    width: 150px;
+    margin: 4px 0 10px 0;
+    accent-color: rgba(128, 0, 128, 0.732);
+    /* Optional */
+}
